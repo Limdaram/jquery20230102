@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.textstyle {
+		font-size : 14px;
+		line-height: 20px;
+		margin: 10px;
+/* 		background-color: yellow; */
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('*').addClass('textstyle');
+		$('em + a').css('background', 'yellow') /* em태그 다음에 오는 a태그 */
+/* 		console.log('검색된 엘리먼트 숫자 : ' + $('em + a').length); */
+	});
+</script>
+</head>
+<body>
+ <em> one </em> 
+ <a> two </a>
+ <a> three </a>
+ <b> four </b>
+ <a> five </a>
+ <em> six </em>
+ <hr>
+ <div>
+	 <span> prev + next로 검색된 엘리먼트 : </span>
+	 <span class="result1"></span>
+ </div> 
+</body>
+</html>

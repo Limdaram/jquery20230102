@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		/* 후손 자식 손자 증손자 포함 */
+		$('p em').css('background', 'pink').each(function() {
+			$('.result1').append($(this).text()+"\n");
+		}); 
+		/* 자식 */
+		$('div > em').css('background', 'black').css('color', 'white').each(function() {
+			$('.result2').append($(this).text() + "\n");
+		}); 
+	});
+</script>
+</head>
+<body>
+ <p>
+	 <em> one </em>
+	 <em> two </em>
+	 <span>
+	 	<em> three </em>
+	 </span>
+ </p>
+ <div>
+	 <em> four </em>
+	 <span>
+	 	<em> five </em>
+	 </span>
+	 <em>six</em>
+</div>	
+<hr>
+ <div>
+	 <span> ancestor descendant로 검색된 엘리먼트 : </span>
+	 <span class="result1"></span>
+ </div>
+ <div>
+	 <span> parent &gt; child로 검색된 엘리먼트 : </span>
+	 <span class="result2"></span>
+ </div>
+</body>
+</html>

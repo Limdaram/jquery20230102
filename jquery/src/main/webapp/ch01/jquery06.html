@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var array = 
+			[{name : '네이버', link:"http://www.naver.com"},
+			{name : '다음', link:"http://www.daum.net"},
+			{name : '구글', link:"http://www.google.com"},
+			{name : '임다람', link:"https://blog.naver.com/limdaram-ing"}];
+		$.each(array, function(index, item) {
+			var output = '<a href = "'+ item.link +'"><h2>'+item.name+'</h2></a>';
+			document.body.innerHTML += output;
+		});
+	});
+</script>
+</head>
+<body>
+	
+</body>
+</html>
