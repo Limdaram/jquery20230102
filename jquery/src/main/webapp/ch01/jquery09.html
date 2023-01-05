@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+ 	$(function() {
+		var object = {name : '임다람'}; // 객체 생성
+		$.extend(object, {
+			gender : '여자', part:'자바'
+		});
+		
+		var output = "";
+		$.each(object, function(key, item) {
+			output += key + ' : ' + item + '\n';
+		});
+		alert(output);
+	});
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

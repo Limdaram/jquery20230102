@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('img').css('width', 250);
+		// 2초에 1회씩 첫번째 이미지를 잘라서 body에 붙인다
+		setInterval(() => {
+			$('img').first().appendTo('body');
+		}, 2000);
+	});
+</script>
+</head>
+<body>
+	<img src="../images/Chrysanthemum.jpg" alt="" />
+	<img src="../images/Desert.jpg" alt="" />
+	<img src="../images/Hydrangeas.jpg" alt="" />
+	<img src="../images/Jellyfisj.jpg" alt="" />
+	<img src="../images/Koala.jpg" alt="" />
+</body>
+</html>

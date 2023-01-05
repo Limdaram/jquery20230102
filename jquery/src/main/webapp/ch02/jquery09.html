@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	div {
+		float : left;
+	}
+	
+	span {
+		color : blue;
+	}
+
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('ul li:nth-child(2)').append('<span>-2nd</span>');
+		$('ul li:nth-child(even)').css('background', 'pink');
+		$('ul li:nth-child(odd)').css('background', 'yellow');
+	});
+</script>
+</head>
+<body>
+	 <div> 
+	 	<ul> <li>사과</li> <li>바나나</li> <li>복숭아</li> </ul> 
+	 </div> 
+	 <div> 
+	 	<ul> <li>소나타</li> </ul> 
+	 </div> 
+	 <div> 
+	 	<ul> <li>코끼리</li> <li>뱀</li> <li>토끼</li> <li>말</li></ul> 
+	 </div>
+</body>
+</html>

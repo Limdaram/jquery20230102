@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.high_light_0 {
+		background: yellow;
+	}
+	.high_light_1 {
+		background: orange;
+	}
+	.high_light_2 {
+		background: green;
+	}
+	.high_light_3 {
+		background: blue;
+	}
+	.high_light_4 {
+		background: silver;
+	}
+	.high_light_5 {
+		background: pink;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('h1').addClass(function(index) {
+			return 'high_light_'+index
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>jquery</h1>
+	<h1>jquery</h1>
+	<h1>jquery</h1>
+	<h1>jquery</h1>
+	<h1>jquery</h1>
+	<h1>jquery</h1>
+</body>
+</html>

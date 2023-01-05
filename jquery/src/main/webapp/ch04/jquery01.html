@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			// width나 height나 하나만 줄어들면 나머지는 같은 비율로 줄어든다
+			// $('img').attr('width', 100);
+			$('img').attr({
+				width: function(index) {
+					return (index + 1) * 100;
+			
+				}, height:100
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<button>크기 조정</button>
+	<img src="../images/Chrysanthemum.jpg" alt="" />
+	<img src="../images/Desert.jpg" alt="" />
+	<img src="../images/Hydrangeas.jpg" alt="" />
+</body>
+</html>

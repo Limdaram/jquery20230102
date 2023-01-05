@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('h2').each(function() {
+			if ($(this).is('.a1')) {
+				$(this).css('background', 'yellow');
+			} else {
+				$(this).css('background', 'pink')
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<h2>임다람</h2><h2 class="a1">최고</h2><h2>임다람</h2><h2>최고</h2>
+	<h2 class="a1">임다람</h2><h2>최고</h2><h2>임다람</h2><h2>최고</h2>
+</body>
+</html>

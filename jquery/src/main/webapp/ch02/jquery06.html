@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+		width : 80%;
+	}
+	
+	.textStyle {
+		color : blue;
+		font-weight: bold;
+		background: pink;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('td').addClass('textStyle');
+		// 인덱스 2보다 작으면 
+		$('td:lt(2)').removeClass('textStyle');
+		// 인덱스 4보다 크면
+		$('td:gt(4)').removeClass('textStyle');
+	});
+</script>
+</head>
+<body>
+	 <table>
+	 	 <tr><td>zero</td><td>one</td></tr> 
+		 <tr><td>two</td><td>three</td></tr> 
+		 <tr><td>four</td><td>five</td></tr> 
+ 	</table>
+</body>
+</html>

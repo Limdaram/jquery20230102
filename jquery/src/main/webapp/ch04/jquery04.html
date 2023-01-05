@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			var color = ['red', 'green', 'blue'];
+			$('h2').css({'color': function(index) {
+				return color[index];
+			}, background:'black'});
+		});
+	});
+</script>
+</head>
+<body>
+	<button>스타일 검사</button>
+	<h2>날씨가</h2>
+	<h2>많이</h2>
+	<h2>좋다</h2>
+</body>
+</html>

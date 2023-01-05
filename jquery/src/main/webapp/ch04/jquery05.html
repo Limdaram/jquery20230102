@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			// 모든 문장을 읽는다
+			 var text = $('h2').text();
+			 alert(text);
+			// 첫 문장만 읽는다
+			// var html = $('h2').html();
+			var html = "";
+			$('h2').each(function() {
+				html += $(this).html();
+			});
+			alert(html);
+		});
+	});
+</script>
+</head>
+<body>
+	<button>스타일</button>
+	<h2>날씨가</h2>
+	<h2>많이</h2>
+	<h2>좋다</h2>
+</body>
+</html>

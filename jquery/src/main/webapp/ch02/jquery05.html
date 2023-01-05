@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// 0은 first
+		// -1은 last와 같다
+		$('tr').eq(0).css('background', 'yellow');
+		$('tr').eq(-1).css('background', 'green');
+	});
+</script>
+</head>
+<body>
+	 <table> 
+		 <tr><td>one</td></tr>
+		 <tr><td>two</td></tr> 
+		 <tr><td>three</td></tr>
+		 <tr><td>four</td></tr> 
+		 <tr><td>five</td></tr> 
+ 	</table> 
+</body>
+</html>

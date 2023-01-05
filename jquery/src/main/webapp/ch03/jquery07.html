@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			$('img').attr({
+				src:'../images/FF.png', width:'200px', height:'200px'
+
+			});
+/* 			$('img').each(function(index) {
+				$(this).attr({
+					src:'../images/FF'+index+'.png',
+					width:'200px',
+					height:'200px'					
+				});
+			}); */
+		});
+	});
+</script>
+</head>
+<body>
+	<button>이미지 보기</button>
+	<img src="" alt="" />
+	<img src="" alt="" />
+	<img src="" alt="" />
+</body>
+</html>

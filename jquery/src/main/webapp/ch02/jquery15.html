@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+ <style> 
+	 div 
+	 { 
+		 margin:10px; 
+		 border:3px Solid Black; 
+		 border-radius:10px; 
+		 float:left; 
+		 width:120px; height:120px; 
+		 text-align:center; 
+	 } 
+ </style> 
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	// 변수를 선언합니다.
+	var xml =  '<friends><friend><name>임다람</name><language>Ruby</language></friend>';
+		xml += '<friend><name>다람이</name><language>Basic</language></friend>';
+		xml += '<friend><name>다람</name><language>C#</language></friend></friends>';
+	
+	$(function () {
+		var xmlDoc = $.parseXML(xml); // xml 이라는 문자열을 xml 문자열로 해석
+		$(xmlDoc).find('friend').each(function() {
+			var out = '<div><h1>'+ $(this).find('name').text()+'</h1>';
+				out += '<p>' + $(this).find('language').text()+'</p>';
+				out += '</div>';
+			document.body.innerHTML += out;
+		});
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

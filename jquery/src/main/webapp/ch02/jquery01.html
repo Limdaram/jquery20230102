@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+		table-layout : auto;
+		width : 80%
+	}
+	
+	td {
+		color : blue;
+		font-weight: bold;
+	}
+	
+	.selectedStyle {
+		font-size: 20pt;
+		background: pink;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('tr:first').addClass('selectedStyle');
+		$('tr:last').addClass('selectedStyle');
+		// text는 문자만
+		// html은 태그 포함
+		console.log("첫문장 : " + $('tr:first').html());
+		console.log("마지막 문장 : " + $('tr.last').text());
+	});
+</script>
+</head>
+<body>
+	 <table> 
+		 <tr><td>one</td></tr>
+		 <tr><td>two</td></tr> 
+		 <tr><td>three</td></tr>
+		 <tr><td>four</td></tr> 
+		 <tr><td>five</td></tr> 
+ 	</table> 
+</body>
+</html>

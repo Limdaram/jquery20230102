@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#b1').click(function() {
+			$('img').attr({width:'100px', height:'100px'});
+			$('img').attr('src', function() {
+				return '../images/'+this.alt+'.jpg';
+			});
+		});
+		$('#b2').click(function() {
+			$('img').removeAttr('src');
+		})
+	});
+</script>
+</head>
+<body>
+	<button id="b1">이미지 보기</button>
+	<button id="b2">이미지 삭제</button> <br>
+	<img src="" alt="image1" />
+	<img src="" alt="image2" />
+	<img src="" alt="image3" />
+</body>
+</html>

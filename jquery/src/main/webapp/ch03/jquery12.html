@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.red {
+		color : red;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#m1').html('<span class="red">임다람</span>'); // html으로 해석해서 출력
+		$('#m2').text('<span class="red">임다람</span>'); // 입력한 그대로 출력
+	})
+</script>
+</head>
+<body>
+	<button>버튼</button>
+	<div id="m1"></div>
+	<div id="m2"></div>
+</body>
+</html>

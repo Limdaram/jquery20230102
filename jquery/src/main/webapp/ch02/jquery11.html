@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('h2:even').css({'background' : 'blue', 'color' : 'white'});
+		$('h2').filter(':odd').css({'background' : 'red', 'color' : 'white'});
+	});
+</script>
+</head>
+<body>
+	<h2>임다람</h2><h2>최고</h2><h2>임다람</h2><h2>최고</h2>
+	<h2>임다람</h2><h2>최고</h2><h2>임다람</h2><h2>최고</h2>
+</body>
+</html>

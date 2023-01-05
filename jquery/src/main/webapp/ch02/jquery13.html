@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+//		$('h2').css('background','orange');
+//		$('h2:even').css('color','red');
+//		$('h2:odd').css('color','blue');
+ 
+		// 짝수만 뽑아서 순서대로 정렬하고 그 중에서 홀수
+ 		$('h2').css('background','orange').filter(':even').css('color', 'red')
+		.filter(':odd').css('color', 'blue');
+	});
+</script>
+</head>
+<body>
+	<h2>임다람</h2><h2>최고</h2><h2>임다람</h2><h2>최고</h2>
+	<h2>임다람</h2><h2>최고</h2><h2>임다람</h2><h2>최고</h2>
+</body>
+</html>

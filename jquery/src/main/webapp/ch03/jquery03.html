@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+
+	$(function() {
+		setTimeout(function() {
+			var value = $('select > option:selected').val();
+			alert(value);
+		}, 3000);
+	});
+
+/*
+	setInterval( function() {
+		var va = $('select option:selected').val();
+		alert(va);
+	}, 5000);
+*/
+
+
+</script>
+</head>
+<body>
+	<select>
+		<option>임다람</option>
+		<option>다람이</option>
+		<option>다람</option>
+		<option>다람지</option>
+		<option>daram</option>
+		<option>limdaram</option>
+	</select>
+</body>
+</html>
