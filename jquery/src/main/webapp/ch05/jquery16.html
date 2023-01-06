@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	* {
+		margin: 10px;
+		padding: 0px 30px;
+		width : 100px;
+	}
+	.border {
+		border : 2px solid red;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			// 안에 있는 내용을 잘라서 two에 덮어쓴다
+			$('div.two').replace('<div class="border">limdaram</div>');
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<button>클릭</button>
+		<div class="box one">임다람</div>
+		<div class="box two">다람이</div>
+		<div class="box three">다람쥐</div>
+		<div class="box four">다람</div>
+	</div>
+</body>
+</html>

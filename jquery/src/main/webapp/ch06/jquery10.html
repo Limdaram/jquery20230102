@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('textarea').keyup(function() { // 입력 후 손을 떼면
+			let input = $(this).val().length; // 입력한 글자수 
+			let remain = 150 - input;
+			$('h2').html(remain);
+			if (remain > 0) $('h2').css('color', 'black');
+			else $('h2').css('color', 'red');
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p>자기소개</p>
+		<h2>150</h2>
+		<textarea name="" id="" cols="70" rows="5"></textarea>
+	</div>
+</body>
+</html>

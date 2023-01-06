@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('input').val('아이디를 입력해주세요').css('color', 'red');
+		$('input').bind('focus', function() { // focus : 커서가 가면
+			$(this).val("").css('color', 'blue');
+		});
+		$('input').bind('blur', function() { // blur : 커서 초점이 벗어나면
+			$(this).val("아이디 왜 입력 안해").css('color', 'blue');
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="text" id="id" />
+</body>
+</html>

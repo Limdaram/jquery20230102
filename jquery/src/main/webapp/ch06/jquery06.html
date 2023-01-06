@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#all_check').change(function() {
+			if (this.checked) $('div').children().prop('checked', true);
+			else {
+				$('#check_item').children().prop('checked', false);
+				// $('#check_item').children().removeAttr('checked');				
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<input type="checkbox" id="all_check" />
+	<label for="">All</label>
+	<div id="check_item">
+		<input type="checkbox" id="a" />
+		<label for="a">임다람</label>
+			<input type="checkbox" id="a" />
+		<label for="a">다람이</label>
+			<input type="checkbox" id="a" />
+		<label for="a">다람</label>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	img {
+		width : 140px;
+		height : 120px;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('img').bind('dblclick', function() {
+			$(this).width($(this).width() + 10);
+			$(this).height($(this).width() + 10);
+		});
+	});
+</script>
+</head>
+<body>
+	<img src="../images/FF.png" alt="" />
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var result = new Array(); // 배열 생성
+		// parent : 부모 ('b'태그의 부모 'span')
+		// parents : 조상 ('b'태그의 조상 SPAN, P, DIV, BODY, HTML)
+		$('b').parents().each(function(index) {
+			result[index] = this.tagName;
+		});
+		$('b').append(result.reverse().join(', '));
+		//$('b').append(result.join(', '));
+	});
+</script>
+</head>
+<body>
+	<div>
+		<p>
+			<span>
+				<b>부모검색 : </b>			
+			</span>
+		</p>
+	</div>
+</body>
+</html>

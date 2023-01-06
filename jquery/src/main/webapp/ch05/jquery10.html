@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	p, div {
+		margin : 5px;
+		padding : 5px;
+	}
+	.border {
+		border : 2px solid red;
+	}
+	.background {
+		background: yellow;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			$('div').find('p').addClass('background')
+			// p태그에 background 하고 추가로 border
+			//.add().addClass('border');
+			// p태그 앞으로 ('div') 가서 border
+			// jquery 1/2 버전은 andSelf
+			//.addBack().addClass('border');
+			// p태그는 끝내고 div에만 border
+			.end().addClass('border');
+		});
+	});
+</script>
+</head>
+<body>
+	<button>클릭</button>
+	<div>
+		<p>첫 번째 문장</p>
+		<p>두 번째 문장</p>
+	</div>
+</body>
+</html>

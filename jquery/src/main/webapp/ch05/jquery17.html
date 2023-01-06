@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<style type="text/css">
+	.border {
+		border : 2px solid red;
+		margin : 10px;
+		padding: 0px 30px;
+		float: left;
+		width : 60px;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('button').click(function() {
+			$('p').wrapAll('<div class="border"></div>');
+		});
+	});
+</script>
+</head>
+<body>
+	<button>클릭</button>
+	<p>임다람</p>
+	<div><p>limdaram</p></div>
+	<p>다람</p>
+	<p>다람쥐</p>
+</body>
+</html>
