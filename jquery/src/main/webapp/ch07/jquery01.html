@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('h1').click(function() {
+			// toggle : show, hide
+			// speed : fast, slow, 1/1000초
+			$(this).next().toggle(3000, function() {
+				// alert('최고');
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<h1>임다람</h1>
+	<div>
+		<h1>좋아</h1>
+		<p>짱좋아</p>
+	</div>
+	<h1>임다람</h1>
+	<div>
+		<h1>좋아</h1>
+		<p>짱좋아</p>
+	</div>
+</body>
+</html>
