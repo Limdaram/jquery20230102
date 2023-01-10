@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var car = {
+				maker : "현대",
+				model : "소나타",
+				year : 2023,
+				buydate : new Date(2023, 0, 1),
+				owner : {name:'임다람', age : 27}
+		};
+		
+		console.log('자동차 생산 : ' + car.maker);
+		console.log('자동차 모델 : ' + car.model);
+		console.log('소유자명 : ' + car.owner.name);
+		console.log(car.owner);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

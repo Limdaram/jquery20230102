@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		let k1 = {name:'임다람', age:27, height:170};
+		let k2 = {age:5, hobby:'춤추기'};
+		// k1과 k2 속성이 같으면 뒤에 속성으로 덮어쓰고 같은 것이 없으면 추가한다
+		$.extend(k1, k2);
+		console.log(k1);
+	});
+</script>
+</head>
+<body>
+	
+</body>
+</html>

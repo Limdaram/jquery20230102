@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		let list = ['임다람', '다람이', '다람쥐', '다람'];
+		$.each(list, function(index, item) {
+			$('ol').append('<li>'+item+'</li>');
+		});
+	});
+</script>
+</head>
+<body>
+	<ol></ol>
+</body>
+</html>

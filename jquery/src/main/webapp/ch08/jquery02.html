@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		var car = new Object(); // var car = {} 객체; -> [] 배열, 자바는 {} 배열
+		car.maker="현대";
+		car.model="소나타"
+		car.year="2023";
+		car.buydate=new Date(2023,0,1); // 월은 0부터 시작
+		var owner = new Object();
+		owner.name = '임다람';
+		owner.age = 27;
+		car.owner = owner;
+		
+		console.log('자동차 생산 : ' + car.maker);
+		console.log('자동차 모델 : ' + car.model);
+		console.log('소유자명 : ' + car.owner.name);
+		console.log(car.owner);
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>
