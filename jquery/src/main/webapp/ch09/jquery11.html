@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<a href="#" data-icon="gear" class="ui-btn-left">세팅</a>
+			<h1>
+				페이지
+			</h1>
+			<a href="#" data-icon="gear" class="ui-btn-right">세팅</a>
+		</div>
+
+		<div data-role="content">
+			<ul>
+				<li><a href="#page1" data-transition="pop">과일</a></li>
+				<li><a href="#page2" data-transition="slide" data-rel="dialog">동물</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2>바닥글</h2>
+		</div>
+	</div>
+	
+	<div data-role="page" id="page1">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>과일</h1>
+		</div>
+
+		<div data-role="content" >
+			<ul>
+				<li>사과</li>
+				<li>포도</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2>바닥글</h2>
+		</div>
+	</div>
+	<div data-role="page" id="page2">
+		<div data-role="header" data-add-back-btn="true">
+			<h1>동물</h1>
+		</div>
+
+		<div data-role="content" >
+			<ul>
+				<li>다람쥐</li>
+				<li>호랑이</li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed">
+			<h2>바닥글</h2>
+		</div>
+	</div>
+</body>
+</html>

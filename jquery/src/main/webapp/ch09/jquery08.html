@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<a href="#" data-icon="gear" class="ui-btn-left">세팅</a>
+			<h1>
+				Slider
+			</h1>
+			<a href="#" data-icon="gear" class="ui-btn-right">세팅</a>
+		</div>
+
+		<div data-role="content">
+			<div data-role="fieldcontain">
+				<label for="m1">Input Slider</label>
+				<input type="range" name="slider" id="m1" max="100" min="0" value="50" 
+						data-theme="b" data-track-theme="c"/>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="e1">슬라이더</label>
+				<select name="slider" id="e1" data-role="slider">
+					<option value="off">off</option>
+					<option value="on">on</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<label for="s1">Select Menu</label>
+				<select name="select" id="s1">
+					<optgroup label="옵션테이블"></optgroup>
+					<option value="1">첫 번째</option>
+					<option value="2">두 번째</option>
+					<option value="3">세 번째</option>
+				</select>
+			</div>
+			<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+					<legend>체크박스</legend>
+					<label for="c1">사과</label>
+					<input type="checkbox" name="c1" id="c1" />
+					<label for="c2">포도</label>
+					<input type="checkbox" name="c1" id="c2" />
+					<label for="c3">딸기</label>
+					<input type="checkbox" name="c1" id="c3" />
+				</fieldset>
+			</div>
+						<div data-role="fieldcontain">
+				<fieldset data-role="controlgroup">
+					<legend>레이디오 버튼</legend>
+					<label for="r1">진라면</label>
+					<input type="radio" name="r1" id="r1" />
+					<label for="r2">스낵면</label>
+					<input type="radio" name="r1" id="r2" />
+					<label for="r3">안성탕면</label>
+					<input type="radio" name="r1" id="r3" />
+				</fieldset>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="https://github.com/Limdaram" data-icon="grid" data-theme="a">github</a></li>
+				<li><a href="https://blog.naver.com/limdaram-ing" data-icon="home" data-theme="a">blog</a>
+			</ul>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
