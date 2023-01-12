@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div { width: 180px; height: 80px; margin: 5px; float: left; }
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#menu1').click(function() {
+			$('#message1').load('menu.html');
+		});
+		$('#menu2').click(function() {
+			$('#message2').load('menu.html li');
+		});
+	});
+</script></head><body>
+<div><a id="menu1">메뉴보기</a><p><span id="message1"></span></div>
+<div><a id="menu2">메뉴보기</a><p><span id="message2"></span></div>
+</body>
+</html>

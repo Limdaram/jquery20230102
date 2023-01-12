@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$('#submit').click(function() {
+			// let sendData = 'name='+$('#name').val()+"&pass="+$('#pass').val();
+			let sendData = $('form').serialize();
+			$.ajaxSetup({type:'post', url:'loginChk.jsp', dataType:'text',
+				success: function(data) {
+					$('#msg').html(data);
+				}});		
+			$.ajax({data:sendData});
+		});		
+	});
+</script></head><body>
+	<form action="">
+		이름 : <input type="text" name="name" id="name"><p>
+		암호 : <input type="password" name="pass" id="pass"><p>
+		<input type="button" value="전송" id="submit">
+	</form>
+	<div id="msg"></div>
+</body>
+</html>
